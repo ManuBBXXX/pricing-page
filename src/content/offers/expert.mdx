@@ -1,18 +1,18 @@
 ---
 title: "Solution Expert Premium"
-price: 4999
-description: "Site web sur mesure de haute performance avec stratégie digitale complète"
-montlyFee: "300€"
+price: 6000
+description: "Site web sur mesure de haute performance avec fonctionnalités avancées et stratégie digitale complète"
+monthlyFee: "300€"
 features:
   [
-    "Design exclusif et innovant",
-    "8+ pages entièrement personnalisées",
-    "SEO expert et stratégie de contenu",
-    "Fonctionnalités avancées sur mesure",
-    "Optimisation UX/UI poussée",
-    "Intégration de systèmes tiers",
-    "Formation complète et support dédié",
-    "Analyse et rapports de performance",
+    "Design exclusif et innovant avec animations personnalisées",
+    "Jusqu'à 12 pages sur mesure, dont une landing page ultra-optimisée",
+    "Contenu interactif dynamique avec base de données",
+    "E-commerce avancé avec pagination et gestion de produits en Base de données",
+    "Intégration paywall avec Stripe",
+    "Système d'authentification et d'inscription des utilisateurs",
+    "SEO expert et stratégie de contenu pour chaque page",
+    "Analyse approfondie et rapports de performance mensuels",
   ]
 delay: "10-12 semaines"
 slug: "solution-expert-premium"
@@ -20,59 +20,65 @@ slug: "solution-expert-premium"
 
 import OfferLayout from "../../layouts/OfferLayout.astro";
 
-<OfferLayout 
+<OfferLayout
   title={frontmatter.title}
   price={frontmatter.price}
   description={frontmatter.description}
   features={frontmatter.features}
   delay={frontmatter.delay}
 >
-
-{" "}
-
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-  <div className="space-y-4">
-    <h2 className="text-2xl font-bold text-white">Conçu pour :</h2>
-    <ul className="list-disc list-inside space-y-2 text-gray-300">
-      <li>Les grandes entreprises</li>
-      <li>Les marques premium</li>
-      <li>Les projets web complexes</li>
-    </ul>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="space-y-4">
+      <h2 className="text-2xl font-bold">Idéal pour :</h2>
+      <ul className="list-disc list-inside space-y-2">
+        <li>Les grandes entreprises avec des besoins complexes</li>
+        <li>Les marques premium cherchant une présence en ligne exceptionnelle</li>
+        <li>Les projets nécessitant des fonctionnalités avancées et sur mesure</li>
+      </ul>
+    </div>
+    <div className="space-y-4">
+      <h2 className="text-2xl font-bold">Ce qui est inclus :</h2>
+      <ul className="list-disc list-inside space-y-2">
+        <li>Design exclusif avec animations et interactions avancées</li>
+        <li>Système de gestion de contenu (CMS) personnalisé</li>
+        <li>Blog professionnel avec catégories et tags</li>
+        <li>Intégration paywall avec Stripe</li>
+        <li>Authentification utilisateur et gestion des profils</li>
+        <li>Intégration de base de données pour contenu dynamique</li>
+        <li>Optimisation SEO experte pour un classement optimal</li>
+        <li>Tableaux de bord d'analyse personnalisés</li>
+      </ul>
+    </div>
   </div>
-  <div className="space-y-4">
-    <h2 className="text-2xl font-bold text-white">
-      Solutions expertes incluses :
-    </h2>
-    <ul className="list-disc list-inside space-y-2 text-gray-300">
-      <li>Audit UX/UI complet et optimisation</li>
-      <li>Développement de fonctionnalités sur mesure</li>
-      <li>Intégration CRM et outils marketing</li>
-      <li>Stratégie de contenu et SEO avancée</li>
-      <li>Tests A/B et optimisation des conversions</li>
-    </ul>
-  </div>
-</div>
 
 {" "}
 
 <div className="mt-8">
   <h2 className="text-2xl font-bold mb-4 text-white">
-    Services complémentaires inclus :
+    Fonctionnalités avancées incluses :
   </h2>
-  <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
     <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
       <span className="font-semibold text-gray-200">
-        Audit de sécurité complet
+        Contenu interactif dynamique :
+      </span>{" "}
+      <span className="text-gray-300">
+        Éléments interactifs alimentés par une base de données
+      </span>
+    </li>
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">Blog avancé :</span>{" "}
+      <span className="text-gray-300">
+        E-commerce avancé avec pagination et gestion de produits en Base de
+        données
       </span>
     </li>
     <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
       <span className="font-semibold text-gray-200">
-        Plan de maintenance sur 12 mois
-      </span>
-    </li>
-    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
-      <span className="font-semibold text-gray-200">
-        Consultation stratégique trimestrielle (1 an)
+        Authentification utilisateur :
+      </span>{" "}
+      <span className="text-gray-300">
+        Système sécurisé d'inscription et de connexion
       </span>
     </li>
   </ul>
@@ -87,21 +93,15 @@ import OfferLayout from "../../layouts/OfferLayout.astro";
   <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
     <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
       <span className="font-semibold text-gray-200">
-        Développement d'application mobile native :
+        Développement de la BDD ( ajout articles par catégories, etc )
       </span>{" "}
-      <span className="text-gray-300">sur devis</span>
+      <span className="text-gray-300">À partir de 1000€</span>
     </li>
     <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
       <span className="font-semibold text-gray-200">
-        Campagne de marketing digital complète :
+        Exports par téléchargement Excel des produits:
       </span>{" "}
-      <span className="text-gray-300">à partir de 2500€/mois</span>
-    </li>
-    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
-      <span className="font-semibold text-gray-200">
-        Service de création de contenu premium continu :
-      </span>{" "}
-      <span className="text-gray-300">à partir de 1500€/mois</span>
+      <span className="text-gray-300">À partir de 500€</span>
     </li>
   </ul>
 </div>

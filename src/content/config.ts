@@ -6,7 +6,7 @@ const offersCollection = defineCollection({
     title: z.string(),
     price: z.number(),
     description: z.string(),
-    montlyFee: z.string(),
+    monthlyFee: z.string(),
     features: z.array(z.string()),
     delay: z.string(),
   }),

@@ -7,26 +7,28 @@ const offers = (await getCollection("offers")).sort(
 ---
 
 <div
-  class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-12 py-12"
+  class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-12 py-12 px-4"
 >
   {
     offers.map((offer) => (
-      <div
-        class="w-full bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform border-2 border-yellow-500 hover:scale-105 flex flex-col cursor-pointer"
-        onclick={`window.location.href='/offres/${offer.slug}'`}
-      >
+      <div class="w-full bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform border-2 border-yellow-500 hover:scale-105 flex flex-col cursor-pointer">
         <div class="px-6 py-8 bg-indigo-700 text-white text-center flex-shrink-0">
           <h3 class="text-2xl font-bold">{offer.data.title}</h3>
-          <div class="mt-4 text-5xl text-green-600 font-extrabold">
+          <div class="mt-4 text-5xl text-yellow-500 font-extrabold">
             {offer.data.price} €
           </div>
           <p class="mt-8 text-indigo-200">{offer.data.description}</p>
           <div class="mt-4 bg-indigo-800 rounded-lg p-3 shadow-inner">
             <p class="text-indigo-200 font-semibold">+ Abonnement mensuel :</p>
             <p class="text-white text-xl font-bold">
-              {offer.data.montlyFee} / mois
+              {offer.data.monthlyFee} / mois
             </p>
-            <p class="text-indigo-300 text-sm">(hébergement & maintenance)</p>
+            <p class="text-indigo-300 text-sm">
+              (hébergement & maintenance
+              {offer.slug === "solution-expert-premium" &&
+                " + coût de la base de données"}
+              )
+            </p>
           </div>
         </div>
         <div class="flex justify-center mt-4 text-red-500">

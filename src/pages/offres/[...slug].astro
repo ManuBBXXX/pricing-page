@@ -15,17 +15,15 @@ const { Content } = await offer.render();
 ---
 
 <Layout title={`Offre : ${offer.data.title}`}>
-  <div class="mx-auto px-4 py-8">
-    <div class="prose prose-invert">
-      <Content />
-    </div>
-    <div class="mt-8 flex justify-center">
-      <a
-        href="/"
-        class="bg-indigo-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-indigo-500 transition-colors"
-      >
-        Retour aux offres
-      </a>
-    </div>
+  <div class="prose prose-invert">
+    <Content />
+  </div>
+  <div class="mt-8 flex justify-center">
+    <a
+      href="/"
+      class="bg-indigo-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-indigo-500 transition-colors"
+    >
+      Retour aux offres
+    </a>
   </div>
 </Layout>

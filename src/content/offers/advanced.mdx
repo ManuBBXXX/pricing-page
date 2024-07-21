@@ -1,86 +1,84 @@
 ---
-title: "Pack Pro"
-price: 2499
-description: "Site web performant avec fonctionnalités avancées pour booster votre activité"
-montlyFee: "100€"
+title: "Pack Site Vitrine Avancé"
+price: 2500
+description: "Site web professionnel avancé pour maximiser votre impact en ligne"
+monthlyFee: "100€"
 features:
   [
-    "Design premium et personnalisé",
-    "Jusqu'à 10 pages sur mesure",
-    "Optimisation SEO avancée",
-    "Intégration de blog ou actualités",
-    "Formulaires avancés et CTA personnalisés",
-    "Galerie d'images / portfolio",
-    "Hébergement haute performance pour 1 an",
-    "Support prioritaire pendant 60 jours",
+    "Design premium personnalisé avec animations avancées",
+    "Jusqu'à 8 pages sur mesure, dont une landing page optimisée",
+    "Carrousel d'images animé sur la page d'accueil",
+    "Chargement d'images optimisé pour une grande vitesse d'affichage",
+    "Intégration de vidéos défilantes",
+    "Optimisation SEO approfondie pour chaque page",
+    "Formulaire de contact avancé avec validation d'erreurs",
+    "Galerie de projets / portfolio interactif",
+    "Hébergement haute performance et maintenance inclus",
   ]
 delay: "4-6 semaines"
-slug: "pack-pro"
+slug: "pack-site-vitrine-premium"
 ---
 
 import OfferLayout from "../../layouts/OfferLayout.astro";
 
-<OfferLayout 
+<OfferLayout
   title={frontmatter.title}
   price={frontmatter.price}
   description={frontmatter.description}
   features={frontmatter.features}
   delay={frontmatter.delay}
 >
-
-{" "}
-
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-  <div className="space-y-4">
-    <h2 className="text-2xl font-bold text-white">Parfait pour :</h2>
-    <ul className="list-disc list-inside space-y-2 text-gray-300">
-      <li>Les PME en croissance</li>
-      <li>Les entreprises B2B</li>
-      <li>Les professionnels libéraux</li>
-    </ul>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="space-y-4">
+      <h2 className="text-2xl font-bold">Idéal pour :</h2>
+      <ul className="list-disc list-inside space-y-2">
+        <li>Les entreprises en croissance</li>
+        <li>Les marques cherchant à se démarquer</li>
+        <li>Les professionnels exigeants</li>
+      </ul>
+    </div>
+    <div className="space-y-4">
+      <h2 className="text-2xl font-bold">Ce qui est inclus :</h2>
+      <ul className="list-disc list-inside space-y-2">
+        <li>Design premium avec maquettes personnalisées</li>
+        <li>Intégration de contenu multimédia avancé</li>
+        <li>Chargement d'images optimisé pour une grande vitesse d'affichage</li>
+        <li>Optimisation SEO poussée pour chaque page</li>
+        <li>Site ultra-responsive avec animations fluides</li>
+        <li>Intégration d'un carrousel d'images animé</li>
+        <li>Section vidéo avec défilement automatique</li>
+      </ul>
+    </div>
   </div>
-  <div className="space-y-4">
-    <h2 className="text-2xl font-bold text-white">
-      Fonctionnalités avancées :
-    </h2>
-    <ul className="list-disc list-inside space-y-2 text-gray-300">
-      <li>Animations et effets visuels personnalisés</li>
-      <li>Intégration de vidéos et médias riches</li>
-      <li>Système de réservation ou prise de rendez-vous</li>
-      <li>Tableau de bord d'administration sur mesure</li>
-      <li>Multilingue (jusqu'à 3 langues)</li>
-    </ul>
-  </div>
-</div>
 
 {" "}
 
 <div className="mt-8">
   <h2 className="text-2xl font-bold mb-4 text-white">
-    Services complémentaires :
+    Options supplémentaires :
   </h2>
   <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
     <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
-      <span className="font-semibold text-gray-200">
-        Stratégie de contenu :
-      </span>{" "}
-      <span className="text-gray-300">500€</span>
-    </li>
-    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
-      <span className="font-semibold text-gray-200">Formation avancée :</span>{" "}
-      <span className="text-gray-300">300€ / 2h</span>
+      <span className="font-semibold text-gray-200">Page supplémentaire :</span>{" "}
+      <span className="text-gray-300">300€ / page</span>
     </li>
     <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
       <span className="font-semibold text-gray-200">
-        Intégration e-commerce avancée :
+        Intégration e-commerce basique :
       </span>{" "}
       <span className="text-gray-300">1000€</span>
     </li>
     <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
       <span className="font-semibold text-gray-200">
-        Maintenance et mises à jour :
+        Maintenance mensuelle premium :
       </span>{" "}
-      <span className="text-gray-300">149€ / mois</span>
+      <span className="text-gray-300">100€ / mois</span>
+    </li>
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">
+        Création de contenu premium (texte + visuel) :
+      </span>{" "}
+      <span className="text-gray-300">250€ / page</span>
     </li>
   </ul>
 </div>
