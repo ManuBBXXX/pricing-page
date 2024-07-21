@@ -1,11 +1,12 @@
 ---
 title: "Solution Expert Premium"
-price: "4999€"
+price: 4999
 description: "Site web sur mesure de haute performance avec stratégie digitale complète"
+montlyFee: "300€"
 features:
   [
-    "8+ pages entièrement personnalisées",
     "Design exclusif et innovant",
+    "8+ pages entièrement personnalisées",
     "SEO expert et stratégie de contenu",
     "Fonctionnalités avancées sur mesure",
     "Optimisation UX/UI poussée",
@@ -14,73 +15,95 @@ features:
     "Analyse et rapports de performance",
   ]
 delay: "10-12 semaines"
-slu   g: "solution-expert-premium"
+slug: "solution-expert-premium"
 ---
 
-## Description détaillée
+import OfferLayout from "../../layouts/OfferLayout.astro";
 
-Élevez votre présence numérique au plus haut niveau avec notre "Solution Expert Premium". Conçue pour les entreprises exigeantes qui visent l'excellence digitale, cette offre fournit un site web sur mesure de classe mondiale, associé à une stratégie digitale complète pour maximiser votre impact en ligne.
+<OfferLayout 
+  title={frontmatter.title}
+  price={frontmatter.price}
+  description={frontmatter.description}
+  features={frontmatter.features}
+  delay={frontmatter.delay}
+>
 
-## Fonctionnalités incluses
+{" "}
 
-1. **8+ pages entièrement personnalisées**
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div className="space-y-4">
+    <h2 className="text-2xl font-bold text-white">Conçu pour :</h2>
+    <ul className="list-disc list-inside space-y-2 text-gray-300">
+      <li>Les grandes entreprises</li>
+      <li>Les marques premium</li>
+      <li>Les projets web complexes</li>
+    </ul>
+  </div>
+  <div className="space-y-4">
+    <h2 className="text-2xl font-bold text-white">
+      Solutions expertes incluses :
+    </h2>
+    <ul className="list-disc list-inside space-y-2 text-gray-300">
+      <li>Audit UX/UI complet et optimisation</li>
+      <li>Développement de fonctionnalités sur mesure</li>
+      <li>Intégration CRM et outils marketing</li>
+      <li>Stratégie de contenu et SEO avancée</li>
+      <li>Tests A/B et optimisation des conversions</li>
+    </ul>
+  </div>
+</div>
 
-   - Architecture de site optimisée pour votre secteur
-   - Pages de conversion spécialisées
-   - Contenu riche et engageant sur chaque page
+{" "}
 
-2. **Design exclusif et innovant**
+<div className="mt-8">
+  <h2 className="text-2xl font-bold mb-4 text-white">
+    Services complémentaires inclus :
+  </h2>
+  <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">
+        Audit de sécurité complet
+      </span>
+    </li>
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">
+        Plan de maintenance sur 12 mois
+      </span>
+    </li>
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">
+        Consultation stratégique trimestrielle (1 an)
+      </span>
+    </li>
+  </ul>
+</div>
 
-   - Création d'une identité visuelle unique
-   - Prototypage avancé et tests utilisateurs
-   - Animations et interactions sophistiquées
-   - Adaptation parfaite à tous les appareils et tailles d'écran
+{" "}
 
-3. **SEO expert et stratégie de contenu**
+<div className="mt-8">
+  <h2 className="text-2xl font-bold mb-4 text-white">
+    Options supplémentaires :
+  </h2>
+  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">
+        Développement d'application mobile native :
+      </span>{" "}
+      <span className="text-gray-300">sur devis</span>
+    </li>
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">
+        Campagne de marketing digital complète :
+      </span>{" "}
+      <span className="text-gray-300">à partir de 2500€/mois</span>
+    </li>
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">
+        Service de création de contenu premium continu :
+      </span>{" "}
+      <span className="text-gray-300">à partir de 1500€/mois</span>
+    </li>
+  </ul>
+</div>
 
-   - Audit SEO complet et plan d'action détaillé
-   - Optimisation technique poussée (Core Web Vitals, etc.)
-   - Création de contenu SEO premium (10 articles de blog inclus)
-   - Stratégie de mots-clés avancée et suivi des positions
-
-4. **Fonctionnalités avancées sur mesure**
-
-   - Systèmes de réservation ou de prise de rendez-vous
-   - Chatbot IA pour l'assistance client
-   - Fonctionnalités e-commerce avancées (si applicable)
-   - Tableaux de bord personnalisés et visualisation de données
-
-5. **Optimisation UX/UI poussée**
-
-   - Tests A/B pour optimiser les conversions
-   - Parcours utilisateur optimisés basés sur des données
-   - Accessibilité WCAG 2.1 niveau AA
-
-6. **Intégration de systèmes tiers**
-
-   - CRM, ERP, outils marketing
-   - APIs personnalisées et intégrations complexes
-   - Synchronisation multi-plateforme
-
-7. **Formation complète et support dédié**
-
-   - 10 heures de formation approfondie
-   - Documentation technique complète
-   - Support prioritaire 24/7 pendant 6 mois
-
-8. **Analyse et rapports de performance**
-   - Configuration avancée de Google Analytics 4
-   - Tableaux de bord personnalisés pour le suivi des KPIs
-   - Rapports mensuels détaillés pendant 6 mois
-
-## Services complémentaires inclus
-
-- Audit de sécurité complet
-- Plan de maintenance et de mise à jour sur 12 mois
-- Consultation stratégique trimestrielle pendant 1 an
-
-## Options supplémentaires
-
-- Développement d'application mobile native : sur devis
-- Campagne de marketing digital complète : à partir de 2500€/mois
-- Service de création de contenu premium continu : à partir de 1500€/mois
+</OfferLayout>

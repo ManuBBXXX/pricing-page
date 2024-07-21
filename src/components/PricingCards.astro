@@ -1,20 +1,33 @@
 ---
 import { getCollection } from "astro:content";
 
-const offers = await getCollection("offers");
+const offers = (await getCollection("offers")).sort(
+  (a, b) => a.data.price - b.data.price
+);
 ---
 
-<div class="flex flex-wrap justify-center gap-8 py-12">
+<div
+  class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-12 py-12"
+>
   {
     offers.map((offer) => (
       <div
-        class="w-full max-w-sm bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 flex flex-col cursor-pointer"
+        class="w-full bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform border-2 border-yellow-500 hover:scale-105 flex flex-col cursor-pointer"
         onclick={`window.location.href='/offres/${offer.slug}'`}
       >
         <div class="px-6 py-8 bg-indigo-700 text-white text-center flex-shrink-0">
           <h3 class="text-2xl font-bold">{offer.data.title}</h3>
-          <div class="mt-4 text-5xl font-extrabold">{offer.data.price}</div>
-          <p class="mt-2 text-indigo-200">{offer.data.description}</p>
+          <div class="mt-4 text-5xl text-green-600 font-extrabold">
+            {offer.data.price} €
+          </div>
+          <p class="mt-8 text-indigo-200">{offer.data.description}</p>
+          <div class="mt-4 bg-indigo-800 rounded-lg p-3 shadow-inner">
+            <p class="text-indigo-200 font-semibold">+ Abonnement mensuel :</p>
+            <p class="text-white text-xl font-bold">
+              {offer.data.montlyFee} / mois
+            </p>
+            <p class="text-indigo-300 text-sm">(hébergement & maintenance)</p>
+          </div>
         </div>
         <div class="flex justify-center mt-4 text-red-500">
           {offer.data.delay}

@@ -1,80 +1,88 @@
 ---
-title: "Solution Pro Avancée"
-price: "2499€"
-description: "Site web professionnel avancé avec SEO optimisé et design complexe"
+title: "Pack Pro"
+price: 2499
+description: "Site web performant avec fonctionnalités avancées pour booster votre activité"
+montlyFee: "100€"
 features:
   [
-    "4 pages personnalisées",
-    "Design complexe et unique",
-    "SEO avancé",
-    "Formulaire de contact par email",
-    "Optimisation des performances",
-    "Intégration de médias riches",
-    "Formation approfondie",
-    "Support technique premium",
+    "Design premium et personnalisé",
+    "Jusqu'à 10 pages sur mesure",
+    "Optimisation SEO avancée",
+    "Intégration de blog ou actualités",
+    "Formulaires avancés et CTA personnalisés",
+    "Galerie d'images / portfolio",
+    "Hébergement haute performance pour 1 an",
+    "Support prioritaire pendant 60 jours",
   ]
-delay: "6 semaines"
-slug: "solution-pro-avancee"
+delay: "4-6 semaines"
+slug: "pack-pro"
 ---
 
-## Description détaillée
+import OfferLayout from "../../layouts/OfferLayout.astro";
 
-Propulsez votre présence en ligne avec notre "Solution Pro Avancée". Conçue pour les entreprises ambitieuses qui cherchent à se démarquer dans le paysage numérique avec un site web sophistiqué et hautement performant.
+<OfferLayout 
+  title={frontmatter.title}
+  price={frontmatter.price}
+  description={frontmatter.description}
+  features={frontmatter.features}
+  delay={frontmatter.delay}
+>
 
-## Fonctionnalités incluses
+{" "}
 
-1. **4 pages personnalisées**
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div className="space-y-4">
+    <h2 className="text-2xl font-bold text-white">Parfait pour :</h2>
+    <ul className="list-disc list-inside space-y-2 text-gray-300">
+      <li>Les PME en croissance</li>
+      <li>Les entreprises B2B</li>
+      <li>Les professionnels libéraux</li>
+    </ul>
+  </div>
+  <div className="space-y-4">
+    <h2 className="text-2xl font-bold text-white">
+      Fonctionnalités avancées :
+    </h2>
+    <ul className="list-disc list-inside space-y-2 text-gray-300">
+      <li>Animations et effets visuels personnalisés</li>
+      <li>Intégration de vidéos et médias riches</li>
+      <li>Système de réservation ou prise de rendez-vous</li>
+      <li>Tableau de bord d'administration sur mesure</li>
+      <li>Multilingue (jusqu'à 3 langues)</li>
+    </ul>
+  </div>
+</div>
 
-   - Page d'accueil captivante
-   - Page "À propos" approfondie
-   - Page de services/produits détaillée
-   - Page de contact avec formulaire avancé
+{" "}
 
-2. **Design complexe et unique**
+<div className="mt-8">
+  <h2 className="text-2xl font-bold mb-4 text-white">
+    Services complémentaires :
+  </h2>
+  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">
+        Stratégie de contenu :
+      </span>{" "}
+      <span className="text-gray-300">500€</span>
+    </li>
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">Formation avancée :</span>{" "}
+      <span className="text-gray-300">300€ / 2h</span>
+    </li>
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">
+        Intégration e-commerce avancée :
+      </span>{" "}
+      <span className="text-gray-300">1000€</span>
+    </li>
+    <li className="p-4 bg-gray-800 rounded-lg hover:shadow-md transition-shadow duration-300">
+      <span className="font-semibold text-gray-200">
+        Maintenance et mises à jour :
+      </span>{" "}
+      <span className="text-gray-300">149€ / mois</span>
+    </li>
+  </ul>
+</div>
 
-   - Maquettes personnalisées pour chaque page
-   - Animations et transitions fluides
-   - Expérience utilisateur (UX) optimisée
-   - Interface utilisateur (UI) moderne et attrayante
-
-3. **SEO avancé**
-
-   - Recherche de mots-clés approfondie
-   - Optimisation on-page complète
-   - Balisage de données structurées
-   - Optimisation de la vitesse de chargement
-   - Création de contenu optimisé pour le SEO
-
-4. **Formulaire de contact par email**
-
-   - Formulaire personnalisé avec validation
-   - Intégration directe avec votre système de messagerie
-   - Protection anti-spam avancée
-
-5. **Optimisation des performances**
-
-   - Temps de chargement optimisé
-   - Mise en cache avancée
-   - Compression d'images et de ressources
-
-6. **Intégration de médias riches**
-
-   - Galeries d'images interactives
-   - Intégration de vidéos optimisées
-   - Infographies personnalisées
-
-7. **Formation approfondie**
-
-   - 3 heures de formation sur la gestion de contenu
-   - Guide utilisateur personnalisé
-
-8. **Support technique premium**
-   - 90 jours de support prioritaire par email et téléphone
-   - Mises à jour de sécurité pendant 6 mois
-
-## Options supplémentaires
-
-- Intégration e-commerce : +999€
-- Blog professionnel : +599€
-- Maintenance mensuelle avancée : à partir de 149€/mois
-- Campagne SEO continue : à partir de 499€/mois
+</OfferLayout>
